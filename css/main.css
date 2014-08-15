@@ -1,0 +1,255 @@
+/* CSS Document */
+
+/****************** FONTS ***************/
+@font-face {font-family: 'Fabrica';src: url('fonts/Fabrica.otf') format('opentype');}
+@font-face {font-family: 'QuickSandBold';src: url('fonts/Quicksand.otf') format('opentype');font-weight: bold;}
+@font-face {font-family: 'QuickSandBook';src: url('fonts/Quicksand_Book.otf') format('opentype');}
+@font-face {font-family: 'QuickSandOblique';src: url('fonts/Quicksand_Book_Oblique.otf') format('opentype');font-style:oblique;}
+@font-face {font-family: 'QuickSandDash';src: url('fonts/Quicksand_Dash.otf') format('opentype');}
+@font-face {font-family: 'QuickSandLight';src: url('fonts/Quicksand_Light.otf') format('opentype');font-weight: 300;}
+@font-face {font-family: 'QuickSandLightOblique';src: url('fonts/Quicksand_Light_Oblique.otf') format('opentype');font-weight: 300;font-style: oblique;}
+@font-face {font-family: 'QuickSandBoldOblique';src: url('fonts/Quicksand_Bold_Oblique') format('opentype');font-weight: bold;font-style: oblique;}
+
+body {
+  font-family: 'Fabrica';
+  background-color: #ffffff;
+}
+
+#wrap{
+	min-height:100%;
+	height:auto !important;
+	height:100%;
+}
+
+#header{
+	padding:10px 0;
+	background:#000;
+}
+
+.shade{
+	background:#fafafa;
+}
+
+#footer{
+	text-align:center;
+	background:#000;
+	color:#fff;
+}
+
+/**********************************************************************************************************/
+
+.line{
+	border:1px solid black;
+}
+.line-w{
+	border:1px solid white;
+}
+
+/************** MENU *********************/
+.logo-main{padding:10px 10px;}
+.logo-right{max-height:60px;}
+.menu-btn{height:25px;width:25px;}
+.navbar .nav > li > a{
+	color:#000;
+	font-family: 'Fabrica';
+	text-transform:uppercase;
+	font-size:14px;
+	letter-spacing:1.5px;
+	text-align:center;
+	margin-left:30px;
+	margin-right:auto;
+}
+.navbar .nav > li:first-child > a{
+	margin-left:auto;
+}
+@media (max-width: 980px) {
+.navbar .nav > li > a{
+	margin-left:auto;
+}
+}
+
+/************** CONTENT *********************/
+.item{
+	font-family: 'QuickSandBook';
+	background-color:#fff;	
+	margin-left:auto;	
+	margin-right:auto;
+	position:relative;
+	padding:10px 10px;
+}
+.item:hover{
+	text-decoration:none;
+}
+.item .image{
+	margin:auto;
+	background-color:#f7f7f7;
+	display:block;
+	width:180px;
+	height:250px;
+}
+.item .title:before{
+	display: block;
+    content: "";
+	background:url("../img/button_pink.svg");
+	background-size:20px 20px;
+	float:right;
+    width: 20px;
+	height: 20px;
+}
+.item .title{
+	font-size:12px;
+	font-weight:100;
+}
+.item .sub-title{
+	color:#696969;
+	font-size:12px;
+	line-height:10px;
+}
+.item .info{
+	position:relative;
+	margin:auto;
+	padding:15px 10px;
+	background-color:#000;
+	color:#fff;
+	width:160px;
+}
+a.thumbnail,a.thumbnail:hover,a.thumbnail:focus{
+	cursor:pointer;
+	border:none;
+	box-shadow:none;
+}
+.item .divider{
+	margin:10px 0;
+	border:1px solid #696969;
+}
+.item .cost{
+	font-size:18px;
+}
+.item .cost:before{
+	content:"";
+	background: url("../img/Next Arrow.svg");
+	background-size:25px 25px;
+	height:25px;
+	width:25px;
+	float:right;
+}
+.item .cost:after{
+	color:#696969;
+	margin-left:10px;
+	content:"USD";
+}
+/************************* REGISTER *********************************/
+#register{
+	top:24%;
+	background-color: #000;
+	padding:10px 10px;
+}
+@media (max-width: 360px) {
+#register{
+	top:20%;
+}
+}
+#register .cross{
+	color:#fff;
+	float:right;
+	padding-top:10px;
+	font-size: 14px;
+	opacity:0.6;
+}
+#register .cross:hover, #register .cross:focus{
+	cursor:pointer;
+	opacity:0.8;
+}
+#register .logo{
+	max-width:170px;
+	margin:10px auto 0 auto;
+	text-align:center;
+	padding:30px;
+}
+#register .body{
+	font-family:'QuickSandBook';
+	max-width:470px;
+	margin:auto auto;
+	text-align:center;
+}
+#register .content{
+	margin-bottom:20px;
+	color:#969696;
+	padding:20px;
+}
+#register .content p{
+	margin-bottom:40px;
+	color:#969696;
+}
+#register .error{
+	color:red;
+}
+.backdrop.fade.in{
+	opacity:0.9;
+}
+.backdrop {
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1040;
+}
+
+/**---------------- Settings Menu --------------------**/
+.settings{
+	color:#696969;
+	margin-bottom:20px;
+}
+.settings ul>li:first-child{
+	font-size:18px;	
+	text-transform:uppercase;
+}
+.setter a{
+	text-decoration:none;
+	color:#696969;
+	margin-left:60px;
+}
+.setter:after{
+	display: block;
+    content: "";
+	background:url(../img/selector_down.svg);
+	background-size: 25px 25px;
+	float:right;
+	margin:0 15px;
+    width: 25px;
+    height: 25px;
+}
+/*------ Developing mode -----*
+.item .demo{
+}
+.item .details .title{
+}
+.item .details .sub-title{
+	text-transform:uppercase;
+	color:#696969;
+	font-size:24px;
+}
+.item .details .cost{
+	text-transform:uppercase;
+	font-size:24px;
+	font-weight:300;
+	margin-bottom:20px;
+}
+.item .details .cost span.retail{
+	margin-left:50px;
+	text-transform:none;
+	color:#696969;
+	text-decoration:line-through;
+}
+.item .details .info-text{
+	margin-bottom:20px;
+	color:#00DFAA;
+}
+.item .details .sizes,.item .details .colors{
+	text-transform:uppercase;
+	letter-spacing:0.8px;
+	font-weight:400;
+}
+/**--------------------------------------------**/
